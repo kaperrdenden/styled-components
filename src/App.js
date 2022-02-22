@@ -43,6 +43,8 @@ function App() {
     >
       <AppBlock>
             <Button>Button</Button>
+            <Button color="gray">Button</Button>
+            <Button color="pink">Button</Button>
        </AppBlock>
     </ThemeProvider>
    
