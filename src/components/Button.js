@@ -27,6 +27,8 @@ const StyledButton = styled.button`
             &:hover{
                 background: ${lighten(0.1,selected)};
             }
+
+            
             &:active{
                 background: ${darken(0.1,selected)};
             }
