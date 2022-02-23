@@ -16,7 +16,7 @@ const DarkBackground = styled.div`
 `;
 
 const DialogBlock = styled.div`
-    width: 320px;
+    width: 350px;
     padding: 1.5rem;
     background: white;
     border-radius: 2px;
@@ -33,6 +33,13 @@ const ButtonGroup = styled.div`
     margin-top: 3rem;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+`
+
+const ShortMarginButton = styled(Button)`
+    & + & {
+        margin-left: 0.5rem;
+    }
 `
 function Dialog({title, children, confirmText, cancelText}) {
     return(
@@ -41,8 +48,8 @@ function Dialog({title, children, confirmText, cancelText}) {
                 <h3>{title}</h3>
                 <p>{children}</p>
                 <ButtonGroup>
-                    <Button color="gray">{cancelText}</Button>
-                    <Button color="pink">{confirmText}</Button>
+                    <ShortMarginButton color="gray">{cancelText}</ShortMarginButton>
+                    <ShortMarginButton color="pink">{confirmText}</ShortMarginButton>
                 </ButtonGroup>
 
             </DialogBlock>
