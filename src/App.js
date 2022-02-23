@@ -29,6 +29,11 @@ const AppBlock = styled.div`
     border: 1px solid black;
     padding: 1rem;
 `;
+const ButtonGroup = styled.div`
+  & + & {
+    margin-top: 1rem;
+  }
+`;
 function App() {
   return (
 
