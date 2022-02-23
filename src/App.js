@@ -63,9 +63,9 @@ function App() {
         </ButtonGroup>
         <ButtonGroup>
           
-          <Button color="pink" size="large">Button</Button>
-          <Button color="pink">Button</Button>
-          <Button color="pink" size="small">Button</Button>
+          <Button color="pink" size="large" outline>Button</Button>
+          <Button color="pink" outline>Button</Button>
+          <Button color="pink" size="small" outline>Button</Button>
               
         </ButtonGroup>
        
