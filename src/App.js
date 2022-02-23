@@ -47,30 +47,10 @@ function App() {
       }}
     >
       <AppBlock>
-        <ButtonGroup>
-          <Button size="large">BUTTON</Button>
-          <Button>BUTTON</Button>
-          <Button size="small">BUTTON</Button>
-        </ButtonGroup>
-        <ButtonGroup>
-          <Button color="gray" size="large">
-            BUTTON
-          </Button>
-          <Button color="gray">BUTTON</Button>
-          <Button color="gray" size="small">
-            BUTTON
-          </Button>
-        </ButtonGroup>
-        <ButtonGroup>
-          <Button color="pink" size="large">
-            BUTTON
-          </Button>
-          <Button color="pink">BUTTON</Button>
-          <Button color="pink" size="small">
-            BUTTON
-          </Button>
-        </ButtonGroup>
-      </AppBlock>
+            <Button>Button</Button>
+            <Button color="gray">Button</Button>
+            <Button color="pink">Button</Button>
+       </AppBlock>
     </ThemeProvider>
    
   );
