@@ -19,21 +19,23 @@ const colorStyles = css`
 `;
 const sizeStyles = css`
     ${( props )=>{
-        props.size === 'large' &&
+      return  props.size === 'large' &&
         css`
             height: 3rem;
             font-size: 1.25rem;
         `
     }}
     ${( props )=>{
-        props.size === 'medium' &&
+
+       return props.size === 'medium' &&
         css`
             height: 2.25rem;
             font-size: 1rem;
         `
     }}
     ${( props )=>{
-        props.size === 'small' &&
+
+      return  props.size === 'small' &&
         css`
             height:1.75rem;
             font-size: 0.875rem;
@@ -68,8 +70,10 @@ const StyledButton = styled.button`
     }
 `;
 
-function Button({children, ...rest}){
-    return <StyledButton color={color} size={size} {...rest}>{children}</StyledButton>
+function Button({children, color, size,  ...rest}){
+    return <StyledButton color={color} size={size} {...rest}>
+        {children}
+        </StyledButton>
 }
 
 Button.defaultProps = {

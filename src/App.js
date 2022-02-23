@@ -47,9 +47,28 @@ function App() {
       }}
     >
       <AppBlock>
-            <Button>Button</Button>
-            <Button color="gray">Button</Button>
-            <Button color="pink">Button</Button>
+            <ButtonGroup>
+          
+              <Button size="large">Button</Button>
+              <Button>Button</Button>
+              <Button size="small">Button</Button>
+                  
+            </ButtonGroup>
+            <ButtonGroup>
+          
+          <Button color="gray" size="large">Button</Button>
+          <Button color="gray">Button</Button>
+          <Button color="gray" size="small">Button</Button>
+              
+        </ButtonGroup>
+        <ButtonGroup>
+          
+          <Button color="pink" size="large">Button</Button>
+          <Button color="pink">Button</Button>
+          <Button color="pink" size="small">Button</Button>
+              
+        </ButtonGroup>
+       
        </AppBlock>
     </ThemeProvider>
    
