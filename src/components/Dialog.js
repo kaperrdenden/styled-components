@@ -31,6 +31,10 @@ const DarkBackground = styled.div`
     justify-content: center;
     background: rgba(0, 0, 0, 0.8);
 
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+    animaiton-name: ${fadeIn};
+    animation-fill-mode: forwards;
 `;
 
 const DialogBlock = styled.div`
