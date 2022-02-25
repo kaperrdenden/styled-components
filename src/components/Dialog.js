@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import Button from './Button';
 
@@ -76,7 +76,17 @@ function Dialog({
     onConfirm, 
     onCancel, 
     visible}) {
-        if (!visible) return null;
+        const [animate, setAnimate] = useState(false);
+        const [localVisible, setLocalVisible] = useState(visible);
+
+        useEffect(()=>{
+            if(localVisible && !visible){
+                setAnimate(true);
+                setTimeout(()=> setAnimate(false), 250);
+            }
+            setLocalVisible(visible);
+        },[localVisible, visible]);
+        if (!animate && !localVisible) return null;
     return(
 
         <DarkBackground>
