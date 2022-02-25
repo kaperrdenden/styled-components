@@ -49,6 +49,11 @@ const DialogBlock = styled.div`
     p{
         font-size: 1.125rem;
     }
+
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+    animation-name: ${slideUp};
+    animation-fill-mode: forwards;
 `;
 
 const ButtonGroup = styled.div`
