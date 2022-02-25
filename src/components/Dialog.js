@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes,css } from 'styled-components';
 import Button from './Button';
 
 
@@ -10,6 +10,14 @@ const fadeIn = keyframes`
     to {
         opacity: 1
     }
+`;
+const fadeOut = keyframes`
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0
+  }
 `;
 
 const slideUp = keyframes`
@@ -43,6 +51,12 @@ const DarkBackground = styled.div`
     animation-timing-function: ease-out;
     animaiton-name: ${fadeIn};
     animation-fill-mode: forwards;
+
+    ${props =>
+        props.disappear &&
+        css`
+          animation-name: ${fadeOut};
+        `}
 `;
 
 const DialogBlock = styled.div`
@@ -62,6 +76,12 @@ const DialogBlock = styled.div`
     animation-timing-function: ease-out;
     animation-name: ${slideUp};
     animation-fill-mode: forwards;
+
+    ${props =>
+        props.disappear &&
+        css`
+          animation-name: ${slideDown};
+        `}
 `;
 
 const ButtonGroup = styled.div`
