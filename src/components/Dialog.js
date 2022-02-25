@@ -12,6 +12,14 @@ const fadeIn = keyframes`
     }
 `;
 
+const slideUp = keyframes`
+    from {
+        transform: translateY(200px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+`
 const DarkBackground = styled.div`
     position: fixed;
     left: 0;
