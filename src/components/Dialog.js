@@ -20,6 +20,14 @@ const slideUp = keyframes`
         transform: translateY(0px);
     }
 `
+const slideDown = keyframes`
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(200px);
+    }
+`
 const DarkBackground = styled.div`
     position: fixed;
     left: 0;
