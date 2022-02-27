@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import Dialog from './components/Dialog';
 import { useState } from 'react';
 
+
 const Circle = styled.div`
 
   width: 5rem;
