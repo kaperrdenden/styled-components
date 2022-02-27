@@ -7,7 +7,6 @@ import Dialog from './components/Dialog';
 import { useState } from 'react';
 
 const Circle = styled.div`
-
   width: 5rem;
   height: 5rem;
   background: ${props => props.color || 'black'};
