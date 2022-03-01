@@ -10,6 +10,7 @@ const fadeIn = keyframes`
         opacity: 1
     }
 `;
+
 const fadeOut = keyframes`
   from {
     opacity: 1
