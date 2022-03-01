@@ -135,7 +135,6 @@ function Dialog({
         </DarkBackground>
     )
 }
-
 Dialog.defaultProps = {
     confirmText: '확인',
     cancelText: '취소',
